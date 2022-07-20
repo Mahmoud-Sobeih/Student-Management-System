@@ -12,9 +12,10 @@ import javax.persistence.Table;
 public class Student {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue
 	private int id;
-	@Column(name = "first_namr", nullable = false)
+	@Column(name = "first_name", nullable = false)
 	private String firstName;
 	@Column(name = "last_name", nullable = false)
 	private String lastName;
@@ -22,7 +23,6 @@ public class Student {
 	private String email;
 	
 	public Student() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public Student(int id, String firstName, String lastName, String email) {
