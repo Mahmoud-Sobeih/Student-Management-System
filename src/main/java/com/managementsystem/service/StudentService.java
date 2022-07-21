@@ -21,4 +21,16 @@ public class StudentService {
 	public Student saveStudent(Student student) {
 		return studentRepo.save(student);
 	}
+	
+	public Student getStudentById(int id) {
+		return studentRepo.findById(id).get();
+	}
+	
+	public Student updateStudent(Student student) {
+		return studentRepo.save(student);
+	}
+	
+	public void deleteStudentById(int id) {
+		studentRepo.deleteById(id);
+	}
 }
